@@ -1,7 +1,7 @@
 ---
 name: git-commit-msg
 description: "Generate Angular Conventional Commit messages for git commits. MUST use this skill whenever the user asks to commit code, write a commit message, generate a commit, mentions 'commit message', or says 提交 / commit in the context of git. This skill ensures every commit follows the type(scope): subject format with proper body and footer conventions."
-author: @cadecode
+author: "@cadecode"
 ---
 
 # Git Commit Message Generator

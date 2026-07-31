@@ -1,7 +1,7 @@
 ---
 name: edit-article
 description: Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.
-author: @mattpocock
+author: "@mattpocock"
 disable-model-invocation: true
 ---
 

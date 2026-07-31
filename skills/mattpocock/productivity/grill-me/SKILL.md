@@ -1,7 +1,7 @@
 ---
 name: grill-me
 description: A relentless interview to sharpen a plan or design.
-author: @mattpocock
+author: "@mattpocock"
 disable-model-invocation: true
 ---
 
