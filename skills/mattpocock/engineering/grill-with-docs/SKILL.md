@@ -4,3 +4,5 @@ description: A relentless interview to sharpen a plan or design, which also crea
 author: @mattpocock
 disable-model-invocation: true
 ---
+
+Run a `/grilling` session, using the `/domain-modeling` skill.
