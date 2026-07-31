@@ -1,0 +1,13 @@
+# === Python 构建产物 ===
+__pycache__/
+*.pyc
+*.pyo
+build/
+dist/
+wheels/
+*.egg-info
+
+# === 虚拟环境 ===
+.venv/
+
+
