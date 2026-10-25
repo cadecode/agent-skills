@@ -11,6 +11,7 @@ skills/
 ├── docs/          # Office 文档（4）：docx、pdf、pptx、xlsx
 ├── search/        # 搜索（2）：brave-search、tavily-search
 ├── writing/       # 写作（3）：doc-coauthoring、edit-article、internal-comms
+├── media/         # 媒体（2）：edge-tts（语音合成）、image-gen（图像生成/编辑）
 ├── mattpocock/    # @mattpocock 技能集（22）：engineering 17 + productivity 5
 ├── experimental/  # 实验中的技能
 └── deprecated/    # 已废弃的技能存档
