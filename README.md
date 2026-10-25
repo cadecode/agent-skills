@@ -9,11 +9,11 @@ skills/
 ├── base/          # 常用基础（6）：环境、依赖、提交信息、技能管理
 ├── coding/        # 编码（1）：frontend-design
 ├── docs/          # Office 文档（4）：docx、pdf、pptx、xlsx
-├── search/        # 搜索（0）：已全部废弃，见 deprecated/
+├── search/        # 搜索（2）：brave-search、tavily-search
 ├── writing/       # 写作（3）：doc-coauthoring、edit-article、internal-comms
 ├── mattpocock/    # @mattpocock 技能集（22）：engineering 17 + productivity 5
 ├── experimental/  # 实验中的技能
-└── deprecated/    # 已废弃的技能存档（2）：brave-search、tavily-search
+└── deprecated/    # 已废弃的技能存档
 ```
 
 ## 安装
@@ -27,4 +27,3 @@ npx skills add cadecode/agent-skills/skills/base --full-depth
 > `--full-depth` 必须加：mattpocock 的技能在三级子目录下，不加会被扫描器跳过。
 > 安装全部技能：`npx skills add cadecode/agent-skills --full-depth`
 > 只装部分技能：`npx skills add cadecode/agent-skills --full-depth -s code-review -s tdd`
-> 不装废弃技能：`--full-depth` 会连 `deprecated/` 一起扫，需要时显式排除或只装指定分类。
