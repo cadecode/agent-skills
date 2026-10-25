@@ -1,0 +1,12 @@
+{
+  "name": "hyperframes-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HyperFrames skill runtime — HTML rendered to video",
+  "license": "Apache-2.0",
+  "author": "@heygen-com",
+  "packageManager": "pnpm@10.34.3",
+  "dependencies": {
+    "hyperframes": "^0.8.196"
+  }
+}
