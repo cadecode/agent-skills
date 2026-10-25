@@ -51,12 +51,19 @@ def repo_root(path: Path | None = None) -> Path:
     return root
 
 
+# directories that never hold repo skills: dependency/virtualenv trees and
+# VCS internals. Without this the scanner also picks up skills bundled inside
+# installed packages (e.g. node_modules/hyperframes/dist/skills/).
+SKIP_DIRS = {"node_modules", "venv", ".venv", "site-packages"}
+
+
 def find_skill_files(root: Path) -> list[Path]:
-    """Find all SKILL.md files under root, skipping hidden dirs (.git etc)."""
+    """Find all SKILL.md files under root, skipping hidden and vendored dirs."""
     files: list[Path] = []
     for p in root.rglob("SKILL.md"):
-        # skip anything under a hidden directory (e.g. .git)
-        if any(part.startswith(".") for part in p.relative_to(root).parts[:-1]):
+        parts = p.relative_to(root).parts[:-1]
+        # skip anything under a hidden directory (e.g. .git) or a vendored tree
+        if any(part.startswith(".") or part in SKIP_DIRS for part in parts):
             continue
         files.append(p)
     return sorted(files)

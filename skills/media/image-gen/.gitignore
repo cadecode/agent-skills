@@ -1,0 +1,21 @@
+# 本地环境与密钥：任何情况下都不进仓库
+.env
+.env.*
+*.key
+*.pem
+auth*.json
+secrets*
+*.secret
+*.local.*
+
+# 依赖与产物
+node_modules/
+out/
+output/
+tmp/
+*.mp3
+*.wav
+*.log
+
+# 一次性试验产物（需要的示例图请放到 gallery/ 并显式提交）
+/test-output/
