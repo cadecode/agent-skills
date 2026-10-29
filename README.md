@@ -12,7 +12,7 @@ skills/
 ├── search/        # 搜索（2）：brave-search、tavily-search
 ├── writing/       # 写作（3）：doc-coauthoring、edit-article、internal-comms
 ├── media/         # 媒体与可视化（5）：语音合成、图像生成、视频合成、架构图、可编辑 draw.io
-├── mattpocock/    # @mattpocock 技能集（22）：engineering 17 + productivity 5
+├── mattpocock/    # @mattpocock 技能集（27）：engineering 20 + productivity 7
 ├── experimental/  # 实验中的技能
 └── deprecated/    # 已废弃的技能存档
 ```
