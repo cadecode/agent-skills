@@ -1,0 +1,16 @@
+# fnos-cli 运行期登录态，绝不入库。
+#
+# 默认写在 ~/.config/fnos-cli（仓库外，默认 secure 模式由系统 DPAPI/Keychain 加密）。
+# 但 FNOS_CLI_CONFIG_DIR 接受相对路径，一旦设成相对值，就会在当前工作目录建
+# profiles/ 并写入明文 session.json —— 内含 access token、refresh token、
+# x_access_code、uid、username。
+#
+# 三种受控文件：
+#   <profile>.session.json      登录态（token）
+#   <profile>.oauth-pending.json PKCE verifier / code_challenge，等待授权期间存在
+#   <profile>.refresh.lock      进程锁，含 PID
+
+profiles/
+*.session.json
+*.oauth-pending.json
+*.refresh.lock

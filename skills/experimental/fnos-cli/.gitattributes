@@ -1,0 +1,3 @@
+# 该目录是发布产物原样 vendor 进来的：启动器对 runtime-manifest.json 做了
+# SHA-256 锁定，任何换行转换都会让校验失败，技能直接不可用。
+* -text
